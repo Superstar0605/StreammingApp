@@ -1,0 +1,53 @@
+:root {
+    --rowHeight: 98vh;
+    --colWidth: 98vw;
+  }
+
+  body{
+      background: white;
+  }
+/*   
+  .videos { 
+      display: grid;
+      grid-gap: 5px;
+      grid-auto-flow: row;
+      grid-template-columns: repeat(auto-fit, minmax(var(--colWidth), 1fr)) ;
+  } */
+  
+  .videoContainer {
+      position: relative;
+      overflow: hidden;
+      min-height: 600px;
+      min-width: 900px;
+      
+  }
+  
+  .videoContainer video {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: auto;
+      width: 100%;
+  }
+  
+  .videoLabel {
+      color: white;
+      font: bold 18px Arial, Sans-Serif;
+      line-height: 18px;
+      height: 18px;
+      
+      background: rgba(0, 0, 0, 0.55);
+      
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 4px;
+  }
+ .btn {
+    width: 150px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+  }
+  .button-active {
+    background-color: aqua;
+  }
